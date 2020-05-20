@@ -8291,10 +8291,3 @@ Airtable.Error = AirtableError;
 module.exports = Airtable;
 
 },{"./airtable_error":1,"./base":2,"./record":13,"./table":15}]},{},["airtable"]);
-var Airtable = require('airtable');
-var base = new Airtable({apiKey: API_KEY}).base(BASE);
-
-base('Table 1').find('recCORwkgPaZHkij4', function(err, record) {
-    if (err) { console.error(err); return; }
-    console.log('Retrieved', record.id);
-});
